@@ -18,12 +18,14 @@ cards.forEach(function (card, index) {
 });
 
 gsap.to(".page2 .textWrapper", {
+    x: "-60%",
     marginLeft: "-300%",
     delay: 1,
     ease: 2,
     scrollTrigger: {
         trigger: ".page2",
         start: "top top",
+        end: "+=2000",
         scrub: true,
         pin: true
     }
